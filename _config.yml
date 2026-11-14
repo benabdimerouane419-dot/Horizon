@@ -8,8 +8,34 @@ url: "https://thysrael.github.io" # the base hostname & protocol for your site, 
 markdown: kramdown
 future: true # Allow future posts to be published
 plugins:
+theme: jekyll-theme-cayman
+title: Horizon Daily
+description: ملخص يومي لأهم أخبار العالم باللغة العربية
+baseurl: "/Horizon"
+url: "https://benabdimerouane419-dot.github.io"
+
+markdown: kramdown
+future: true
+
+plugins:
   - jekyll-feed
+
 feed:
+  path: feed.xml
+
+exclude:
+  - ".github"
+  - "node_modules"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
+  - jekyll-feed
+feed:٢
   path: feed.xml
 exclude:
   - ".github"
